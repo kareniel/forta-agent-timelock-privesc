@@ -14,8 +14,8 @@ const d = (str: string) => str.replace(/\n| +/, ' ');
  * the project assets.
  */
 export const PrivEscCritical = Finding.fromObject({
-  alertId: 'TL-PRIVESC-1',
-  name: 'EXECUTOR role is open',
+  alertId: 'TIMELOCK-PRIVESC-1',
+  name: 'The EXECUTOR role is open',
   description: d(`Anyone can use this vulnerability to hijack the
     TimelockController and have control over the project assets.`),
   type: FindingType.Info,
@@ -33,8 +33,8 @@ export const PrivEscCritical = Finding.fromObject({
  * PROPOSER rights.
  */
 export const PrivEscHigh = Finding.fromObject({
-  alertId: 'TL-PRIVESC-2',
-  name: 'Untrusted address with EXECUTOR rights',
+  alertId: 'TIMELOCK-PRIVESC-2',
+  name: 'An untrusted address has EXECUTOR rights',
   description: d(`Anyone with access to the untrusted account can hijack the
     Timelock.`),
   type: FindingType.Info,
@@ -48,8 +48,8 @@ export const PrivEscHigh = Finding.fromObject({
  * one EXECUTOR to be at least in this tier.
  */
 export const PrivEscMedium = Finding.fromObject({
-  alertId: 'TL-PRIVESC-3',
-  name: 'Timelock with more than one EXECUTOR',
+  alertId: 'TIMELOCK-PRIVESC-3',
+  name: 'The timelock has more than one EXECUTOR',
   description: d(`A single EXECUTOR can escalate to ADMIN privileges and
     revoke access to the others.`),
   type: FindingType.Info,
@@ -62,9 +62,9 @@ export const PrivEscMedium = Finding.fromObject({
  * owners, only to the community members.
  */
 export const PrivEscLow = Finding.fromObject({
-  alertId: 'TL-PRIVESC-4',
-  name: 'Timelock has a single proposer/executor',
-  description: d(`The vulnerability poses no risk to project owners,
+  alertId: 'TIMELOCK-PRIVESC-4',
+  name: 'The timelock has a single proposer/executor',
+  description: d(`This poses no risk to project owners,
     only to the community members`),
   type: FindingType.Info,
   severity: FindingSeverity.Low,

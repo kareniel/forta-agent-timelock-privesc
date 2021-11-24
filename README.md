@@ -10,19 +10,19 @@ This agent detects privilege escalation in a governance system's timelock.
 
 ## Alerts
 
-- TL-PRIVESC-1
+- TIMELOCK-PRIVESC-1
   - Fired when __
   - Severity is always set to "critical"
   - Type is always set to "suspicious"
-- TL-PRIVESC-2
+- TIMELOCK-PRIVESC-PRIVESC-2
   - Fired when __
   - Severity is always set to "high"
   - Type is always set to "suspicious"
-- TL-PRIVESC-3
+- TIMELOCK-PRIVESC-PRIVESC-3
   - Fired when __
   - Severity is always set to "medium"
   - Type is always set to "suspicious"
-- TL-PRIVESC-4
+- TIMELOCK-PRIVESC-PRIVESC-4
   - Fired when __
   - Severity is always set to "low"
   - Type is always set to "suspicious"

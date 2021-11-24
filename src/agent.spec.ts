@@ -10,7 +10,7 @@ import {
   PrivEscLow,
 } from './findings';
 
-describe('TimelockController threat detection', () => {
+describe('Timelock privilege escalation detection', () => {
   let handleTransaction: HandleTransaction;
 
   beforeAll(() => {
